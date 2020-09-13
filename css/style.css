@@ -12,6 +12,7 @@ html,
 body {
 	height: 100%;
 	font-family: 'Josefin Sans', sans-serif;
+	color: white;
 }
 
 h1,
@@ -156,7 +157,7 @@ ol {
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 12px;
-	min-width: 213px;
+	min-width: 200px;
 	min-height: 20px;
 	text-align: center;
 	padding: 20px 10px 15px;
@@ -189,7 +190,7 @@ ol {
 }
 
 .circle-progress .progress-info {
-	background: #f2f7f8;
+	background: #e798cd;
 	width: 127px;
 	height: 127px;
 	border-radius: 150px;
@@ -294,14 +295,14 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #40424a;
+	background: #e798cd;
 }
 
 .bar-inner span {
 	position: absolute;
 	right: 0;
 	bottom: -30px;
-	color: #40424a;
+	color: #e798cd;
 	font-weight: 600;
 }
 
@@ -330,7 +331,7 @@ ol {
 	display: inline-block;
 	margin-right: 18px;
 	border-radius: 12px;
-	background: #40424a;
+	background: #e798cd;
 }
 
 .language-progress .lan-prog span.fade-ele {
@@ -367,7 +368,8 @@ ol {
 -----------------------*/
 .header-section {
 	padding: 50px 40px;
-	background: #f2f7f8;
+	background: black;
+	/*f2f7f8;*/
 }
 
 .site-logo h2 {
@@ -375,7 +377,7 @@ ol {
 }
 
 .site-logo h2 a {
-	color: #40424a;
+	color: white;
 }
 
 .site-logo p {
@@ -472,7 +474,7 @@ ol {
 	z-index: 5;
 }
 
-.social-section .social-link-warp:after {
+.social-section .social-link-warp:after, .home-two-style .social-section .social-link-warp::after {
 	position: absolute;
 	content: '';
 	width: 50%;
@@ -480,16 +482,17 @@ ol {
 	left: 23%;
 	top: 50%;
 	margin-top: 1px;
-	background: #cbcbcb;
+	background: #e798cd;
 }
 
 /*---------------------
 	Resume section
 ----------------------*/
 .resume-section.with-bg {
-	background-image: url(../img/resume-bg.jpg);
+	/*background-image: url(../img/binary.jpg);*/
 	background-repeat: no-repeat;
 	background-size: cover;
+	background: #dbdadae1
 }
 
 .resume-list {
@@ -515,7 +518,7 @@ ol {
 	height: 15px;
 	border: 2px solid #40424a;
 	border-radius: 50px;
-	background: #cacaca;
+	background: #e798cd;
 	top: 30px;
 	left: -118px;
 }
@@ -697,11 +700,11 @@ ol {
 	Home 2 Style
 -----------------------*/
 .home-two-style {
-	background-image: url(../img/home-2-bg.png);
+	background-image: url(../img/img1.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
-	background-color: #009fff;
+	background-color: #000000de;
 }
 
 .home-two-style .header-section,
@@ -762,11 +765,11 @@ ol {
 }
 
 .home-two-style .resume-list li:after {
-	background: #009fff;
+	background: #e798cd;
 }
 
 .home-two-style .circle-progress .progress-info {
-	background: #50bcfd;
+	background: #e798cd;
 }
 
 .home-two-style .fact-box {
