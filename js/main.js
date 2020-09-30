@@ -18,7 +18,30 @@ $(window).on('load', function() {
 	$("#preloder").delay(400).fadeOut("slow");
 
 });
+if ($(window).width() > 992) {
+	$(window).scroll(function(){  
+	   if ($(this).scrollTop() > 40) {
+		  $('#navbar_top').addClass("fixed-top");
+		  // add padding top to show content behind navbar
+		  $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
 
+		  $('#nav').addClass("navbar-nav ml-auto");
+		  // add padding top to show content behind navbar
+		  $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+		}else{
+		  $('#navbar_top').removeClass("fixed-top");
+		  $('#nav').removeClass("navbar-nav ml-auto");
+		   // remove padding top from body
+		  $('body').css('padding-top', '0');
+		}   
+	});
+  } // end if
+  $(function () {
+    $('.dropdown-menu a').click(function (e) {
+        $(e.target).find('.dropdown-menu').toggle();
+        
+    });
+});
 
 (function($) {
 
@@ -84,10 +107,10 @@ if($().circleProgress){
 
 	//Set progress circle 1
 	$("#progress1").circleProgress({
-		value: 0.75,
+		value: 0.83,
 		size: 175,
 		thickness: 2,
-		fill: "#40424a",
+		fill: "#ffffff",
 		emptyFill: "rgba(0, 0, 0, 0)"
 	});
 	//Set progress circle 2
@@ -95,7 +118,7 @@ if($().circleProgress){
 		value: 0.83,
 		size: 175,
 		thickness: 2,
-		fill: "#40424a",
+		fill: "#ffffff",
 		emptyFill: "rgba(0, 0, 0, 0)"
 	});
 
@@ -117,12 +140,11 @@ if($().circleProgress){
 		emptyFill: "rgba(0, 0, 0, 0)"
 	});
 
-	//Set progress circle skyblue
 	$("#progress5").circleProgress({
-		value: 0.75,
+		value: 0.83,
 		size: 175,
 		thickness: 2,
-		fill: "#009fff",
+		fill: "#ffffff",
 		emptyFill: "rgba(0, 0, 0, 0)"
 	});
 
@@ -131,7 +153,32 @@ if($().circleProgress){
 		value: 0.83,
 		size: 175,
 		thickness: 2,
-		fill: "#009fff",
+		fill: "#ffffff",
+		emptyFill: "rgba(0, 0, 0, 0)"
+	});
+
+	//Set progress circle white
+	$("#progress7").circleProgress({
+		value: 0.83,
+		size: 175,
+		thickness: 2,
+		fill: "#ffffff",
+		emptyFill: "rgba(0, 0, 0, 0)"
+	});
+	//Set progress circle white
+	$("#progress7").circleProgress({
+		value: 0.83,
+		size: 175,
+		thickness: 2,
+		fill: "#ffffff",
+		emptyFill: "rgba(0, 0, 0, 0)"
+	});
+	//Set progress circle white
+	$("#progress8").circleProgress({
+		value: 0.83,
+		size: 175,
+		thickness: 2,
+		fill: "#ffffff",
 		emptyFill: "rgba(0, 0, 0, 0)"
 	});
 }

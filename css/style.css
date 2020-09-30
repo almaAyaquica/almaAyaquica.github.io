@@ -57,7 +57,6 @@ a:focus {
 	text-decoration: none;
 	outline: none;
 }
-
 ul,
 ol {
 	padding: 0;
@@ -153,7 +152,7 @@ ol {
 }
 
 /* Site Buttons */
-.site-btn {
+.site-btn, .site-btn-nav{
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -169,7 +168,7 @@ ol {
 	font-weight: 700;
 }
 
-.site-btn:hover {
+.site-btn:hover{
 	color: #40424a;
 }
 
@@ -687,12 +686,13 @@ ol {
 .footer-section {
 	background: #40424a;
 	padding: 20px 0;
+	color: white;
 }
 
 .copyright {
 	padding-top: 5px;
 	font-size: 12px;
-	color: #838488;
+	color: white;
 	line-height: normal;
 }
 
@@ -711,7 +711,7 @@ ol {
 .home-two-style .hero-section,
 .home-two-style .social-section,
 .home-two-style .review-slider .owl-dots .owl-dot,
-.home-two-style .site-btn,
+.home-two-style .site-btn, .site-btn-nav
 .home-two-style .fact-box,
 .home-two-style .social-links,
 .home-two-style .social-section .social-link-warp h2 {
@@ -730,7 +730,7 @@ ol {
 .home-two-style .hero-info ul li,
 .home-two-style .hero-info ul li span,
 .home-two-style .single-review .qut,
-.home-two-style .site-btn,
+.home-two-style .site-btn, .site-btn-nav,
 .home-two-style .social-section .social-links a,
 .home-two-style .contact-form input,
 .home-two-style .contact-form textarea,
@@ -748,7 +748,7 @@ ol {
 .home-two-style .resume-list,
 .home-two-style .resume-list li:after,
 .home-two-style .review-slider .owl-dots .owl-dot,
-.home-two-style .site-btn,
+.home-two-style .site-btn, .site-btn-nav,
 .home-two-style .contact-form input,
 .home-two-style .contact-form textarea {
 	border-color: #fff;

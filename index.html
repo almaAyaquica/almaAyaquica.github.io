@@ -10,13 +10,17 @@
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" crossorigin="anonymous" />
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -40,7 +44,7 @@
 	</div>
 	<div class="home-two-style">
 		<!-- Header section start -->
-		<header class="header-section">
+		<header class="header-section" id="header">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-4">
@@ -49,9 +53,42 @@
 							<p>Computer Science and Technology</p>
 						</div>
 					</div>
-					<div class="col-md-8 text-md-right header-buttons">
-						<a href="CV_Alma-Español.pdf" class="site-btn"><i class="fa fa-download"></i> Download CV</a>
-						<a href="español.html" class="site-btn">Español</a>					
+					<div class="navbar navbar-static-top">
+						<nav class="navbar fixed-right" id="navbar_top">		
+							<ul class="nav" id="nav">
+								<li class="nav-item">
+									<a class="site-btn" href="#header">General Info</a>
+								</li>
+								<li class="nav-item">
+									<a class="site-btn" href="#work">Work Experience</a>
+								</li>
+								<li class="nav-item">
+									<a class="site-btn" href="#education">Education</a>
+								</li>
+								<li class="nav-item">
+									<a class="site-btn" href="#references">References</a>
+								</li>
+								<li class="nav-item">
+									<a class="site-btn" href="#skills">Skills</a>
+								</li> 
+								<li class="nav-item">
+									<a class="site-btn" href="#contact">Contact Me</a>
+								</li> 
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle site-btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fa fa-globe"></i> EN/ES
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="español.html" style="font-size: 18px;"><span class="flag-icon flag-icon-mx"></span> Español</a>
+										<a class="dropdown-item" href="index.html" style="font-size: 18px;"><span class="flag-icon flag-icon-us"></span> English</a>
+
+									</div>
+								</li>
+								<li class="nav-item">
+									<a href="CV_Alma-Español.pdf" class="site-btn"><i class="fa fa-download"></i> Download CV</a>
+								</li>
+							</ul> 
+						</nav>
 					</div>
 				</div>
 			</div>
@@ -59,7 +96,7 @@
 		<!-- Header section end -->
 
 		<!-- Hero section start -->
-		<section class="hero-section spad">
+		<section class="hero-section spad" id="general">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xl-10 offset-xl-1">
@@ -80,7 +117,7 @@
 							</div>
 							<div class="col-lg-6">
 								<figure class="hero-image">
-									<img src="img/user.png" alt="5">
+									<img src="img/user.png">
 								</figure>
 							</div>
 						</div>
@@ -91,7 +128,7 @@
 		<!-- Hero section end -->
 	</div>
 	<!-- Social links section start -->
-	<div class="social-section">
+	<div class="social-section" id="social">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
@@ -109,7 +146,7 @@
 	<!-- Social links section end -->
 <div class="home-two-style">
 	<!-- Work  Experience -->
-	<section class="resume-section spad">
+	<section class="resume-section spad" id="work">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-7 offset-xl-2">
@@ -161,7 +198,7 @@
 	<!-- work section end -->
 
 	<!-- Education section start -->
-	<section class="resume-section spad">
+	<section class="resume-section spad" id="education">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-7 offset-xl-2">
@@ -196,7 +233,7 @@
 
 	
 	<!-- Review section start -->
-	<section class="review-section spad pb-0">
+	<section class="review-section spad pb-0" id="references">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-7 offset-xl-2">
@@ -281,7 +318,7 @@
 
 	<!-- Skills section start -->
 	
-	<section class="extra-section spad pb-0">
+	<section class="extra-section spad pb-0" id="skills">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-8 offset-xl-2">
@@ -289,61 +326,191 @@
 						<h2>Skills</h2>
 					</div>
 					<div class="row">
-						<div class="col-lg-3 col-md-6 pt-5">
+						<div class="col-lg-6">
+							<div class="skills pt-5 pt-lg-0">
+								<div class="single-progress-item">
+									<div class="progress-bar-style black" data-progress="90"></div>
+									<p>Java</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="75"></div>
+									<p>C/C++</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="60"></div>
+									<p>JavaScript</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="50"></div>
+									<p>VBA</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="40"></div>
+									<p>Python</p>
+								</div>
+							</div>	
+						</div>
+						<div class="col-lg-6">
+							<div class="skills pt-5 pt-lg-0">
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="90"></div>
+									<p>HTML/CSS</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="70"></div>
+									<p>PHP</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="50"></div>
+									<p>Swift</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="40"></div>
+									<p>MySQL</p>
+								</div>
+								<div class="single-progress-item">
+									<div class="progress-bar-style" data-progress="40"></div>
+									<p>Elixir</p>
+								</div>
+							</div>	
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg col-md-6 pt-5">
 							<div class="fact-box trans">
 								<div class="fact-content">
 									<div class="circle-progress">
-										<div id="progress4" class="prog-circle"></div>
+										<div id="progress1" class="prog-circle"></div>
 										<div class="progress-info">
-											<h2>75%</h2>
+											<h2>50%</h2>
 										</div>
 										<div class="prog-title">
-											<h3>Inspiration</h3>
+											<h3>Android Studio</h3>
 											<p>Etiam nec odio vestibulum est.</p>
 										</div>			
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 pt-5">
+						<div class="col-lg col-md-6 pt-5">
+							<div class="fact-box trans">
+								<div class="fact-content">
+									<div class="circle-progress">
+										<div id="progress2" class="prog-circle"></div>
+										<div class="progress-info">
+											<h2>30%</h2>
+										</div>
+										<div class="prog-title">
+											<h3>AngularJS</h3>
+											<p>Etiam nec odio vestibulum est.</p>
+										</div>			
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg col-md-6 pt-5">
 							<div class="fact-box trans">
 								<div class="fact-content">
 									<div class="circle-progress">
 										<div id="progress3" class="prog-circle"></div>
 										<div class="progress-info">
-											<h2>83%</h2>
+											<h2>50%</h2>
 										</div>
 										<div class="prog-title">
-											<h3>Inspiration</h3>
+											<h3>React</h3>
 											<p>Etiam nec odio vestibulum est.</p>
 										</div>			
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6">
-							<div class="skills pt-5 pt-lg-0">
-								<div class="single-progress-item">
-									<div class="progress-bar-style black" data-progress="99"></div>
-									<p>Design</p>
-								</div>
-								<div class="single-progress-item">
-									<div class="progress-bar-style" data-progress="75"></div>
-									<p>Illsutrator</p>
-								</div>
-								<div class="single-progress-item">
-									<div class="progress-bar-style" data-progress="87"></div>
-									<p>Photoshop</p>
-								</div>
-								<div class="single-progress-item">
-									<div class="progress-bar-style" data-progress="60"></div>
-									<p>HTML</p>
+						<div class="col-lg col-md-6 pt-5">
+							<div class="fact-box trans">
+								<div class="fact-content">
+									<div class="circle-progress">
+										<div id="progress8" class="prog-circle"></div>
+										<div class="progress-info">
+											<h2>50%</h2>
+										</div>
+										<div class="prog-title">
+											<h3>React</h3>
+											<p>Etiam nec odio vestibulum est.</p>
+										</div>			
+									</div>
 								</div>
 							</div>
+						</div>
 					</div>
-				</div>
+					<div class="row">
+						<div class="col-lg col-md-6 pt-5">
+							<div class="fact-box trans">
+								<div class="fact-content">
+									<div class="circle-progress">
+										<div id="progress7" class="prog-circle"></div>
+										<div class="progress-info">
+											<h2>50%</h2>
+										</div>
+										<div class="prog-title">
+											<h3>Git</h3>
+											<p>Etiam nec odio vestibulum est.</p>
+										</div>			
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg col-md-6 pt-5">
+							<div class="fact-box trans">
+								<div class="fact-content">
+									<div class="circle-progress">
+										<div id="progress4" class="prog-circle"></div>
+										<div class="progress-info">
+											<h2>50%</h2>
+										</div>
+										<div class="prog-title">
+											<h3>Git</h3>
+											<p>Etiam nec odio vestibulum est.</p>
+										</div>			
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg col-md-6 pt-5">
+							<div class="fact-box trans">
+								<div class="fact-content">
+									<div class="circle-progress">
+										<div id="progress5" class="prog-circle"></div>
+										<div class="progress-info">
+											<h2>30%</h2>
+										</div>
+										<div class="prog-title">
+											<h3>GatsbyJS</h3>
+											<p>Etiam nec odio vestibulum est.</p>
+										</div>			
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg col-md-6 pt-5">
+							<div class="fact-box trans">
+								<div class="fact-content">
+									<div class="circle-progress">
+										<div id="progress6" class="prog-circle"></div>
+										<div class="progress-info">
+											<h2>50%</h2>
+										</div>
+										<div class="prog-title">
+											<h3>NodeJs</h3>
+											<p>Etiam nec odio vestibulum est.</p>
+										</div>			
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
 				<div class="row">
-					<div class="col-8">
+					<div class="col-lg-8   col-md-6">
 						<div class="section-title">
 							<h2>Hobbies</h2>
 						</div>
@@ -366,7 +533,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-lg-4  col-md-6 ">
 						<div class="section-title">
 							<h2>Languages</h2>
 						</div>
@@ -384,7 +551,7 @@
 	<!-- Extra section end -->
 
 	<!-- Contact section start -->
-	<section class="contact-section spad">
+	<section class="contact-section spad" id="contact">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-8 offset-xl-2">
@@ -417,7 +584,7 @@
 
 	<!-- Footer section start -->
 	<footer class="footer-section">
-		<div class="container text-center">
+		<div class="container text-center text-light">
 			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script>
 </div>
