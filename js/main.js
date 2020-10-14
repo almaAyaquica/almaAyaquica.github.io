@@ -1,12 +1,3 @@
-/* =================================
-------------------------------------
-	Civic - CV Resume
-	Version: 1.0
- ------------------------------------ 
- ====================================*/
-
-
-
 'use strict';
 
 
@@ -37,12 +28,20 @@ if ($(window).width() > 992) {
 	});
   } // end if
   $(function () {
-    $('.dropdown-menu a').click(function (e) {
+    $('.dropdown-menu li a').click(function (e) {
         $(e.target).find('.dropdown-menu').toggle();
         
     });
 });
-
+$(function(){
+  
+	$(".dropdown-menu li a").click(function(){
+	  
+	  $(".btn:first-child").text($(this).text());
+	   $(".btn:first-child").val($(this).text());
+	});
+  
+  });
 (function($) {
 
 	/*------------------
