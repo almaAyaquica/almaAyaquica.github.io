@@ -67,6 +67,10 @@ ol {
 	margin: 0;
 }
 
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: #a69c9c;
+}
 /*---------------------
 	Helper CSS
 -----------------------*/
