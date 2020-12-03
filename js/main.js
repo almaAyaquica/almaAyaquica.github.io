@@ -36,6 +36,7 @@ if ($(window).width() > 992) {
     });
 });
 //scroll v2.0
+/*
 $(document).ready(function(){
 	// Add smooth scrolling to all links
 	$("a").on('click', function(event) {
@@ -58,7 +59,7 @@ $(document).ready(function(){
       });
     } // End if
   });
-});
+});*/
 
 (function($) {
 
