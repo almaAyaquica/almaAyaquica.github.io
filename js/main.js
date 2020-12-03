@@ -1,6 +1,7 @@
 'use strict';
 
 
+
 $(window).on('load', function() { 
 	/*------------------
 		Preloder
@@ -9,17 +10,6 @@ $(window).on('load', function() {
 	$("#preloder").delay(400).fadeOut("slow");
 
 });
-//movimiento
-$(".header-section ul a").on("click", function (e) {
-	// 1
-	e.preventDefault();
-	// 2
-	const href = $(this).attr("href");
-	// 3
-	$("html, body").animate({ scrollTop: $(href).offset().top }, 800);
-});
-
-//Menu de lado
 if ($(window).width() > 992) {
 	$(window).scroll(function(){  
 	   if ($(this).scrollTop() > 40) {
@@ -38,6 +28,7 @@ if ($(window).width() > 992) {
 		}   
 	});
   } // end if
+  
   $(function () {
     $('.dropdown-menu a').click(function (e) {
         $(e.target).find('.dropdown-menu').toggle();
