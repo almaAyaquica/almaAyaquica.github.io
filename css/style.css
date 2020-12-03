@@ -69,7 +69,7 @@ ol {
 
 .nav > li > a:focus, .nav > li > a:hover {
     text-decoration: none;
-    background-color: #a69c9c;
+    background-color: #e798cde1; /*#e798cd*/
 }
 /*---------------------
 	Helper CSS
