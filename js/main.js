@@ -33,7 +33,7 @@ if ($(window).width() > 992) {
 
 //scroll btn
 $(document).ready(function () {
-
+if ($(window).width() < 992) {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
             $('.scrollup').fadeIn();
@@ -42,7 +42,7 @@ $(document).ready(function () {
             $('.scrollup').fadeOut();
         }
     });
-
+}
     $('.scrollup').click(function () {
         $("html, body").animate({
             scrollTop: 0

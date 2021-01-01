@@ -43,8 +43,8 @@ p {
 }
 
 img {
-	width: 100%;
-	max-width: 600px;
+	width: 60%;
+	max-width: 500px;
 	height: auto;
 
 }
@@ -1485,6 +1485,6 @@ ol {
     right: 40px;
     background: transparent;
     color: pink;
-     border: transparent;
+    border: transparent;
 }}
 
