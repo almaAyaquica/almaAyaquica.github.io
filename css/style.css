@@ -48,6 +48,11 @@ img {
 	height: auto;
 
 }
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
+    font-weight: 400;
+    line-height: 1;
+    color: hotpink;
+}
 
 input:focus,
 select:focus,
@@ -82,7 +87,7 @@ ol {
 .section-title h2 {
 	display: inline-block;
 	position: relative;
-	margin-bottom: 110px;
+	margin-bottom: 50px;
 	padding-bottom: 2px;
 	line-height: normal;
 }
@@ -511,7 +516,7 @@ ol {
 }
 
 .resume-list li {
-	margin-bottom: 120px;
+	margin-bottom: 50px;
 	position: relative;
 }
 
@@ -541,7 +546,7 @@ ol {
 	text-transform: uppercase;
 	color: #808181;
 	margin-top: 10px;
-	margin-bottom: 45px;
+	margin-bottom: 15px;
 }
 
 .resume-list p {
@@ -1487,4 +1492,6 @@ ol {
     color: pink;
     border: transparent;
 }}
+
+
 
