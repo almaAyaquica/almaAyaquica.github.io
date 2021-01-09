@@ -52,7 +52,6 @@ if ($(window).width() < 992) {
 
 });
 
-
 (function($) {
 
 	/*------------------
@@ -105,9 +104,74 @@ if ($(window).width() < 992) {
 		Popup
 	--------------------*/
 	$('.portfolio-item .port-pic').magnificPopup({
+        items: [
+      {
+        src: 'img/portfolio/roche.png',
+        title: 'Roche Cosmetics Section'
+      },
+        {
+        src: '<div class="white-popup" style="text-align: center;font-size: 25px;">Roche Cosmetics Experience was on a Remote modality because of COVID <br/>La experiencia en Roche Cosmetics fue en modalidad Remota debido al COVID</div>', // HTML string
+        type: 'inline'
+      },
+        {
+        src: 'img/portfolio/vw-b.jpg',
+        title: 'Volkswagen Section'
+      },
+      {
+        src: 'img/portfolio/vw-v.mp4',
+        type: 'iframe', // this overrides default type
+        title: 'Volkswagen'
+      },
+      {
+        src: 'img/portfolio/first.mp4',
+        type: 'iframe', // this overrides default type
+        title: 'First Day'
+      },
+        {
+        src: 'img/portfolio/friends.mp4',
+        type: 'iframe', // this overrides default type
+        title: 'Volkswagen Friends'
+      },
+            {
+        src: 'img/portfolio/induccion.mp4',
+        type: 'iframe', // this overrides default type
+        title: 'Volkswagen Induccion'
+      },
+            {
+        src: 'img/portfolio/work.mp4',
+        type: 'iframe', // this overrides default type
+        title: 'Volkswagen'
+      },
+            {
+        src: 'img/portfolio/area.jpg',
+        title: 'Volkswagen Area'
+      },
+        {
+        src: 'img/portfolio/love.mp4',
+        type: 'iframe', // this overrides default type
+        title: 'Volkswagen Car'
+      },
+        {
+        src: 'img/portfolio/tasa.jpg',
+        title: 'Bavaria Biergarten Section'
+      },
+          {
+        src: 'img/portfolio/bb.mp4',
+        type: 'iframe', // this overrides default type
+        title: 'Volkswagen'
+      },
+    ],
 		type: 'image',
 		mainClass: 'img-popup-warp',
 		removalDelay: 500,
+        closeOnContentClick: true,
+        gallery: {
+            enabled: true,
+            tPrev: 'Previous (Left arrow key)', // title for left button
+            tNext: 'Next (Right arrow key)', // title for right button
+            tCounter: '<span class="mfp-counter">%curr% of %total%</span>', // markup of counter
+            arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+        }
 	});
 
 

@@ -605,10 +605,19 @@ ol {
 .portfolio-warp {
 	padding: 0 60px;
 }
+.portfolio-item {
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-position: center center;
+    position: relative;
+    margin-bottom: 30px;
+}
 
 .portfolio-item h2 {
 	font-size: 24px;
 	margin-bottom: 5px;
+    
 }
 
 .portfolio-item p {
@@ -625,11 +634,13 @@ ol {
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
+    font-size: 25px;
 }
 
 .portfolio-item .port-pic:after {
 	position: absolute;
 	content: '';
+    font-size: 25px;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -641,13 +652,56 @@ ol {
 	-o-transition: all 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
 	transition: all 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
 }
-
-.portfolio-item:hover .port-pic:after {
-	opacity: 0.8;
+.portfolio-item:hover{
+	opacity: 1;
 	height: 100%;
 	top: 0;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.portfolio-item:hover .port-pic:after {
+	opacity: 0.3;
+	height: 100%;
+	top: 0;
+    background-color:#b3c6ff;
+    color: gray;
+
+}
+.mfp-bottom-bar{
+    background-color: rebeccapurple;
+    height: 10%;
+}
+.mfp-bottom-bar .mfp-title{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 15px;
 }
 
+.portfolio-item:hover .pi-inner small{
+    opacity: .8;
+    letter-spacing: 0;
+    font-style: oblique; 
+    color:darkblue;
+    background-color: white;
+    font-size: 30px;
+    transition: all .3s ease 0s;
+}
+
+.portfolio-item .pi-inner small {
+    opacity: .8;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    color: hotpink;
+    display: block;
+    background-color: white;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
 /*---------------------
 	Contact section
 -----------------------*/
@@ -1492,6 +1546,8 @@ ol {
     color: pink;
     border: transparent;
 }}
+
+
 
 
 
