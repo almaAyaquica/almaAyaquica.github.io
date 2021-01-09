@@ -1524,12 +1524,6 @@ ol {
     color: white;
     width: 100%
   }
-    .btn .dropdown-toggle .site-btn{
-        width:560px;
-    }
-    .dropdown-menu{
-        width: 560px;
-    }
     .scrollup{
         display: block;
     }
@@ -1546,12 +1540,13 @@ ol {
     display: block;
     text-align: left;
   }
-    .btn{
-        width:560px;
+    .btn, .btn dropdown-toggle .site-btn,  .dropdown-menu,{
+        width:100%;
     }
-    .dropdown-menu{
-        width: 560px;
+    .dropdown-menu:show{
+        width: 100%
     }
+
     .navbar .fixed-right{
         display: none;
     }
