@@ -1524,6 +1524,12 @@ ol {
     color: white;
     width: 100%
   }
+    .btn .dropdown-toggle .site-btn{
+        width:560px;
+    }
+    .dropdown-menu{
+        width: 560px;
+    }
     .scrollup{
         display: block;
     }
@@ -1540,6 +1546,12 @@ ol {
     display: block;
     text-align: left;
   }
+    .btn{
+        width:560px;
+    }
+    .dropdown-menu{
+        width: 560px;
+    }
     .navbar .fixed-right{
         display: none;
     }
@@ -1547,14 +1559,25 @@ ol {
 
  .scrollup {
     position: fixed;
+    border-radius: 50%;
+     cursor: pointer;
     bottom: 50px;
     right: 40px;
     background: transparent;
     color: hotpink;
     border: transparent;
-}}
-
-
+}
+.scrollup:hover {
+    color: white;
+}
+.scrollup:focus {
+  background: transparent;
+    color: hotpink;
+  transition: all 3s ease;
+}
+.scrollup:active {
+  background: hotpink;
+}
 
 
 

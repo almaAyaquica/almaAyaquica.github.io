@@ -34,15 +34,19 @@ if ($(window).width() > 992) {
 //scroll btn
 $(document).ready(function () {
 if ($(window).width() < 992) {
+    $('#lang').addClass("navbar navbar-static-top");
+    $('#lang').removeClass("col-md text-md-right");
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 40) {
+        if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
-           
         } else {
             $('.scrollup').fadeOut();
         }
     });
+}else{
+   $('#lang').addClass("col-md text-md-right");
 }
+
     $('.scrollup').click(function () {
         $("html, body").animate({
             scrollTop: 0
