@@ -4,7 +4,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     scroll-behavior: smooth;
-    width:100%;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -43,8 +43,40 @@ a {
     color: hotpink;
 }
 
-a:hover {
+.link {
+    /* RESET */
+    text-decoration: none;
+    line-height: 1;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    padding: 5px 5px;
+    overflow: hidden;
     color: white;
+    vertical-align: bottom;
+    transition: color .3s ease-out;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translateY(calc(100% - 2px));
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(213, 26, 215, 1) 3%, rgba(175, 91, 238, 1) 50%, rgba(0, 155, 255, 1) 87%);
+    transition: transform .25s ease-out;
+}
+
+.link:hover {
+    color: #fff;
+}
+
+.link:hover::before {
+    transform: translateY(0);
+    transition: transform .25s ease-out;
 }
 
 img {
@@ -80,7 +112,7 @@ h6 .small,
 h6 small {
     font-weight: 400;
     line-height: 1;
-    color: hotpink;
+    color: #e798cd;
 }
 
 input:focus,
@@ -102,12 +134,19 @@ ol {
     margin: 0;
 }
 
-.nav > li > a:focus,
 .nav > li > a:hover {
     text-decoration: none;
-    background-color: #e798cde1;
+    background-color: #e798cd;
+    transform: scale(1.1);
+    cursor: pointer;
+    -webkit-transition: background-color .6s ease-out;
+    -moz-transition: background-color .6s ease-out;
+    -o-transition: background-color .6s ease-out;
+    transition: background-color .6s ease-out;
     /*#e798cd*/
 }
+
+
 
 /*---------------------
     Helper CSS
@@ -123,6 +162,7 @@ ol {
     margin-bottom: 50px;
     padding-bottom: 2px;
     line-height: normal;
+    color: hotpink !important;
 }
 
 .section-title h2:after {
@@ -132,7 +172,7 @@ ol {
     height: 2px;
     left: 0;
     bottom: 0;
-    background: #40424a;
+    background: white !important;
 }
 
 .set-bg {
@@ -346,14 +386,14 @@ ol {
     height: 100%;
     left: 0;
     top: 0;
-    background: #e798cd;
+    background-image: linear-gradient(90deg, rgba(175, 91, 238, 1) 20%, rgba(0, 155, 255, 1) 50%, rgba(59, 207, 56, 1) 80%);
 }
 
 .bar-inner span {
     position: absolute;
     right: 0;
     bottom: -30px;
-    color: #e798cd;
+    color: white;
     font-weight: 600;
 }
 
@@ -677,7 +717,8 @@ ol {
     font-size: 25px;
 }
 
-.portfolio-item .port-pic:after {
+/* EFECTO HOVER GALLERY*/
+/*.portfolio-item .port-pic:after {
     position: absolute;
     content: '';
     font-size: 25px;
@@ -691,7 +732,7 @@ ol {
     -webkit-transition: all 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
     -o-transition: all 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
     transition: all 0.4s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
-}
+}*/
 
 .portfolio-item:hover {
     opacity: 1;
@@ -722,18 +763,19 @@ ol {
     margin-top: 15px;
 }
 
+
 .portfolio-item:hover .pi-inner small {
-    opacity: .8;
+    /*opacity: .8;*/
     letter-spacing: 0;
     font-style: oblique;
-    color: darkblue;
-    background-color: white;
+    color: white;
+    background-image: linear-gradient(90deg, rgba(213, 26, 215, 1) 3%, rgba(175, 91, 238, 1) 50%, rgba(0, 155, 255, 1) 87%);
     font-size: 30px;
     transition: all .3s ease 0s;
 }
 
 .portfolio-item .pi-inner small {
-    opacity: .8;
+    /*opacity: .8;*/
     font-size: 20px;
     font-weight: 400;
     position: absolute;
@@ -851,8 +893,70 @@ ol {
 .home-two-style .circle-progress .prog-title p,
 .home-two-style .circle-progress .prog-title h3,
 .home-two-style .circle-progress .progress-info h2 {
-    color: #fff !important;
+    color: #fff;
 }
+
+.icon {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    line-height: 52px;
+    text-align: center;
+    background-color: white;
+}
+
+.icon:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+}
+
+/* Hover effect */
+.icon-effect .icon {
+    .transition-animation;
+}
+
+.icon-effect-1a .icon:hover {
+    background-color: hotpink;
+    color: white;
+}
+
+.icon-effect-1a .icon:hover:after {
+    .transition-scale(1); // mixins
+    opacity: 1;
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 4px hotpink;
+    .transition-animation; // mixins
+    .transition-scale(.8); // mixins
+    opacity: 0;
+}
+
+.transition-animation {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.transition-scale (@scale) {
+    -webkit-transform: scale(@scale);
+    -moz-transform: scale(@scale);
+    -ms-transform: scale(@scale);
+    -o-transform: scale(@scale);
+    transform: scale(@scale);
+}
+
 
 .home-two-style .section-title h2:after,
 .home-two-style .review-slider .owl-dots .owl-dot.active {
@@ -880,7 +984,7 @@ ol {
 }
 
 .home-two-style .resume-list li:after {
-    background: #e798cd;
+    background: hotpink;
 }
 
 .home-two-style .circle-progress .progress-info {
@@ -1683,3 +1787,5 @@ ol {
 .scrollup:active {
     background: hotpink;
 }
+
+$link: #EC407A;
